@@ -710,7 +710,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   block: {fileID: 3855142852996578538, guid: 14eab43a4dbcbac48b2aa122eca392aa, type: 3}
-  width: 100
+  width: 10
   height: 4
 --- !u!4 &1907069184
 Transform:
