@@ -15,6 +15,8 @@ public class FireProjectile : MonoBehaviour
     public Rigidbody projectile;
     public float speed = 4;
 
+    private int numberOfShots = 0;
+
     // Update is called once per frame
     void Update()
     {
@@ -22,6 +24,13 @@ public class FireProjectile : MonoBehaviour
         {
             Rigidbody p = Instantiate(projectile, transform.position, transform.rotation);
             p.velocity = transform.forward * speed;
+
+            numberOfShots++;
         }
+    }
+
+    void OnGUI()
+    {
+      GUI.Label(new Rect(10, 10, 200, 20), "Number of shots: " + numberOfShots);  
     }
 }
